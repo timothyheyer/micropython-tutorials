@@ -1,13 +1,6 @@
 from microbit import *
+import random
 
-while True:
-    if button_a.is_pressed() and not button_b.is_pressed():
-        display.show(Image.HAPPY)
-    elif button_b.is_pressed() and not button_a.is_pressed():
-        display.show(Image.HEART)
-    elif button_a.is_pressed() and button_b.is_pressed():
-        display.show(Image.YES)
-    else:
-        display.show(Image.ASLEEP)
+cities = ["Denver", "Aurora", "Boulder", "Vail", "Aspen", "Breckenridge", "Englewood" ]
 
-display.clear()
+display.scroll(random.choice(cities))
