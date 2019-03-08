@@ -1,5 +1,5 @@
 # A micro:bit Firefly.
-# By Nicholas H.Tollervey and Timothy Heyer.
+# By Nicholas H.Tollervey and Timothy Heyer
 import radio
 import random
 from microbit import display, Image, button_b, sleep
